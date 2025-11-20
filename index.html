@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <section class="form">
+    <h1>Contact Us</h1>
+
+    <form id="myForm">
+
+      <!-- Name Fields -->
+      <div class="name-wrapper">
+        <div class="field name-field">
+          <label for="first-name">First Name *</label>
+          <input type="text" id="first-name">
+          <span class="error"></span>
+        </div>
+
+        <div class="field name-field">
+          <label for="last-name">Last Name *</label>
+          <input type="text" id="last-name">
+          <span class="error"></span>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="field email-field">
+        <label for="email">Email Address *</label>
+        <br>
+        <input type="email" id="email">
+        <span class="error"></span>
+      </div>
+
+      <!-- Radio Section -->
+      <div class="field radio-field">
+        <label>Query Type *</label>
+        <div class="parent-radio">
+          <label class="radio">
+            <input type="radio" name="query" id="general">
+            General Enquiry
+          </label>
+
+
+          <label class="radio">
+            <input type="radio" name="query" id="support">
+            Support Request
+          </label>
+
+        </div>
+        <span class="error"></span>
+      </div>
+
+      <!-- Message -->
+      <div class="field message-field">
+        <label for="message">Message *</label>
+        <br>
+        <textarea id="message"></textarea>
+        <span class="error"></span>
+      </div>
+
+
+      <!-- Consent -->
+      <div class="consent">
+        <input type="checkbox" id="consent">
+        <label for="consent">I consent to being contacted by the team *</label>
+        <span class="error"></span>
+      </div>
+
+
+      <!-- Submit -->
+      <div class="btn">
+        <button class="button" type="submit">Submit</button>
+      </div>
+      <div id="topAlert" class="top-alert">
+    <div class="alert-icon">
+        ✓
+    </div>
+    <div class="alert-text">
+        <h3>Message Sent!</h3>
+        <p>Thanks for completing the form we will be in touch soon</p>
+    </div>
+</div>
+
+    </form>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
